@@ -11,13 +11,11 @@ interface ItemMenuProps {
 
 const ItemMenu: React.FC<ItemMenuProps> = ({ name, url = "" }) => {
   return (
-    <>
-      <Button variant={"outline"} className="border-0" asChild>
-        <Link href={url} className="text-sm text-left">
-          {name}
-        </Link>
-      </Button>
-    </>
+    <Button variant={"outline"} className="border-0 w-full justify-start" >
+      <Link href={url} className="justify-start text-sm text-left ">
+        {name}
+      </Link>
+    </Button>
   );
 };
 

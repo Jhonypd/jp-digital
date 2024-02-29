@@ -1,6 +1,6 @@
 /** @format */
 
-import { SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { SheetClose, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import ItemMenu from "../../components/item-menu";
 import { listMenu } from "../../utils/list-menu";
 
@@ -11,9 +11,11 @@ const SideMenuMobile = () => {
         <SheetTitle>Menu</SheetTitle>
       </SheetHeader>
 
-      <div className="flex flex-col gap-3 px-5">
+      <div className="flex flex-col gap-3 items-start py-5 px-2">
         {listMenu.map((menu) => (
-          <ItemMenu key={menu.name} name={menu.name} url={menu.url} />
+          <SheetClose key={menu.name} asChild>
+            <ItemMenu name={menu.name} url={menu.url} />
+          </SheetClose>
         ))}
       </div>
     </>
