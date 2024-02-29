@@ -5,15 +5,14 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import Location from "../main/Location";
-import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
+
+import Location from "../main/Location";
 import Services from "../main/Services";
+import Segments from "../main/Segments";
 
 export default function Home() {
-  // const [notificationStatus, setNotificationStatus] = useState<
-  //   null | string | undefined | Function
-  // >(null);
+ 
   const { toast } = useToast();
 
   const notificationVerification = () => {
@@ -76,9 +75,15 @@ export default function Home() {
           </div>
         </CardContent>
       </Card>
+
       <div className="mt-6 mb-[4.5rem]">
         <Location />
       </div>
+
+      <div className="mt-6 mb-[4.5rem]">
+        <Services />
+      </div>
+
       <div className="mt-6 mb-[4.5rem]">
         <Services />
       </div>
