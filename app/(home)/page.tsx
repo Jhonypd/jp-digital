@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Location from "../main/Location";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
+import Services from "../main/Services";
 
 export default function Home() {
   // const [notificationStatus, setNotificationStatus] = useState<
@@ -57,10 +58,14 @@ export default function Home() {
           </div>
           <div className="w-full flex flex-col">
             <h2 className="font-bold text-4xl pt-4">Transformação digital</h2>
-            <p className="py-4 text-[#595959] font-normal">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry&apos;s standard dummy text ever since the
-              1500s.
+            <p className="py-4 text-[#595959] font-normal text-center">
+              A Transformação Digital está revolucionando a forma como os negócios operam
+              e se relacionam com seus clientes. Ela envolve a integração de tecnologias
+              digitais em todos os aspectos de uma organização, desde processos internos
+              até a experiência do cliente, com o objetivo de melhorar a eficiência,
+              inovação e competitividade. Estamos aqui para ajudá-lo a navegar nessa
+              jornada de transformação digital, tornando sua empresa mais ágil, conectada
+              e preparada para o futuro.
             </p>
             <Button
               onClick={notificationVerification}
@@ -73,6 +78,9 @@ export default function Home() {
       </Card>
       <div className="mt-6 mb-[4.5rem]">
         <Location />
+      </div>
+      <div className="mt-6 mb-[4.5rem]">
+        <Services />
       </div>
     </div>
   );
