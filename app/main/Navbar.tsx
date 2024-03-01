@@ -43,8 +43,8 @@ const Navbar = () => {
       <Card>
         <CardContent className="p-5 flex justify-between items-center flex-row">
           <Link href={"/"} className="text-nowrap ">
-            <p className="font-bold ">
-              JP<span className="text-black"> Digital</span>
+            <p className="font-bold text-black">
+              JP<span className="text-[#595959]"> Digital</span>
             </p>
           </Link>
           {initialWidth <= 768 ? (
