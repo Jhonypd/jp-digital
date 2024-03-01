@@ -45,8 +45,8 @@ export default function Home() {
       <Card className="min-w-full max-w-full pt-24 border-0 shadow-none">
         <CardContent
           id="home"
-          className="py-20 px-8 flex md:flex-row flex-col gap-4 w-full relative">
-          <div className="w-full h-64 relative pt-4">
+          className="md:py-10 py-20 px-8 flex md:flex-row flex-col gap-4 w-full relative">
+          <div className="w-full md:h-96 h-64 relative pt-4">
             <Image
               src={"/image-hero.png"}
               alt={"Image home"}
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           <div className="w-full flex flex-col">
             <h2 className="font-bold text-4xl pt-4">Transformação digital</h2>
-            <p className="py-4 text-[#595959] font-normal text-center">
+            <p className="py-4 text-[#595959] font-normal text-left">
               A Transformação Digital está revolucionando a forma como os negócios operam
               e se relacionam com seus clientes. Ela envolve a integração de tecnologias
               digitais em todos os aspectos de uma organização, desde processos internos
@@ -69,7 +69,7 @@ export default function Home() {
             <Button
               onClick={notificationVerification}
               variant={"outline"}
-              className="w-52 text-lg text-[#0074ff]">
+              className="w-52 text-lg text-[#0074ff] mt-4">
               Ativar Notificações
             </Button>
           </div>

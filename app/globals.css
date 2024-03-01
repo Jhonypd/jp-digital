@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+:target {
+  scroll-margin-top: 30px;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

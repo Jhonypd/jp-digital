@@ -18,7 +18,7 @@ const Segments = () => {
             typesetting industry. Lorem Ipsum has been the industry's 
             "
         />
-        <div className="px-4 flex flex-col gap-8">
+        <div className="px-4 py-4 flex md:flex-row md:flex-wrap items-center justify-center flex-col gap-8">
           {ListSegments.map((segment) => (
             <CardsItemSegment
               key={segment.name}

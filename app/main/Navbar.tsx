@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 w-full z-[50]">
-      <Card>
+      <Card className="md:border-0 shadow-none rounded-none">
         <CardContent className="p-5 flex justify-between items-center flex-row">
           <Link href={"/"} className="text-nowrap ">
             <p className="font-bold text-black">
