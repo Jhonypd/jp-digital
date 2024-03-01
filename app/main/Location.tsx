@@ -1,7 +1,7 @@
 /** @format */
 
 import MapLocation from "../sub/map-laction";
-import TitleH2 from "../sub/titles";
+import TitleH2 from "../../components/titles";
 
 const Location = () => {
   return (

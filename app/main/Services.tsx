@@ -2,7 +2,7 @@
 
 import CardsItem from "../sub/cards-item";
 import ListHorizontal from "../sub/list-horizontal";
-import TitleH2 from "../sub/titles";
+import TitleH2 from "../../components/titles";
 import { listServices } from "@/utils/list-service";
 
 const Services = () => {

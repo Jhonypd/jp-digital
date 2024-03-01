@@ -13,9 +13,9 @@ const CardsItem = ({ title, description, id }: CardsItemProps) => {
     <Card className="min-w-[280px] w-[280px] max-w-[280px] min-h-[350px] max-h-[350px] h-[350px] relative text-white bg-[#0074FF]">
       <CardContent className="px-3 absolute top-[15%] flex flex-col py-4 w-full text-left">
         <CardTitle className="font-bold text-2xl text-nowrap ml-4">{title}</CardTitle>
-        {description?.map((desc) => (
+        {description?.map((desc, index) => (
           <CardDescription
-            key={desc.length * 11}
+            key={`${id}-${index}`}
             className="mt-2 text-wrap text-sm text-white">
             {desc}
           </CardDescription>
