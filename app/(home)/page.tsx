@@ -85,7 +85,7 @@ export default function Home() {
       </div>
 
       <div className="mt-6 mb-[4.5rem]">
-        <Services />
+        <Segments />
       </div>
     </div>
   );
